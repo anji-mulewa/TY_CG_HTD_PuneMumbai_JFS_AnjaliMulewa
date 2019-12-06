@@ -1,0 +1,8 @@
+Feature: Testing the login Feature
+
+Scenario: Testing the login Feature with Valid Data
+Given the user has loaded the application in the browser
+When the user enters the valid username
+And the user enters the valid password
+And the user clicks on the login button
+Then the dashboardpage must be displayed
