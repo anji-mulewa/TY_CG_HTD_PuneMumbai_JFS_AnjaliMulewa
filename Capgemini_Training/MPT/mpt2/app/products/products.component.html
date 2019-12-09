@@ -1,0 +1,5 @@
+<div class="col-md-3 mt-5 card card-body float-left" *ngFor='let product of products' style="height: 300px;">
+    <img [src]="product.image" alt="product image" class="card-img-top">
+    <h4 class="text-center text-muted">{{product.name}}</h4>
+    <p>{{product.price | currency:'INR'}}</p>
+</div>
