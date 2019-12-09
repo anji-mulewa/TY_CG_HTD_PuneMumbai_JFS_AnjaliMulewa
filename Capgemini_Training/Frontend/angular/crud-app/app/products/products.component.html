@@ -1,0 +1,12 @@
+<h3 class="text-primary text-center">Products</h3>
+<div class="col-md-4 mt-5">
+    <label for="search"></label>
+<input type="search" name="search" class="form-control" placeholder="Enter product to be searched..." 
+[(ngModel)]="search">
+</div>
+<div class="card card-body col-md-3 float-left" *ngFor="let product of productService.products | filter: search">
+    <img [src]="product.imgURL" class="card-img-top" alt="product image">
+    <h5>{{product.pname}}</h5>
+    <p>{{product.price | currency:'INR'}}</p>
+    <p>{{product.details}}</p>
+</div>

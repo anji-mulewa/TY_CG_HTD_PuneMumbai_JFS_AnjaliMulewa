@@ -1,0 +1,27 @@
+table,th,td{
+    /* border: 1px solid black;
+    border-collapse: collapse; */
+    margin-left: 388px;
+    margin-top: 172px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    font-family: cursive;
+}
+table{
+    width: 20%;
+}
+th{
+    background-color: cyan;
+}
+tr:nth-child(odd){
+    background-color: rgb(11, 131, 131);
+}
+tr:nth-child(even){
+    background-color: rgb(11, 167, 167);
+}
+td:hover{
+    background-color: darkgrey;
+    color:whitesmoke;
+    cursor: pointer;
+}

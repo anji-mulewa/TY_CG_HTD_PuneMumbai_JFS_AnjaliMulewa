@@ -1,0 +1,39 @@
+form{
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 300px;
+    height: 200px;
+    margin-left:382px;
+    margin-top:200px;
+    text-align: center;
+    background-image: url("/images/gifexample.gif");
+    font-size: 20px;
+    color: violet; 
+    box-shadow: 25px 25px 50px yellow;
+    font-family: inherit;
+}
+input[type="username"], input[type="password"]{
+    width: 200px;
+    height: 23px;
+    border: 1px solid orangered;
+    border-radius: 50px;
+    margin: 10px;
+    outline: none;
+    text-align: center;
+    
+}
+input[type="submit"]{
+    border: 1px solid red;
+    padding: 5px 20px;
+    border-radius: 25px;
+    outline: none;
+}
+input[type="submit"]:hover{
+    background-color:blanchedalmond ;
+    cursor: pointer ;
+}
+
+body{
+    background-image: url("/images/flamingo.jpg");
+    background-size: cover;
+}
