@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	<!-- by name -->
+	<!-- 
+	<bean id="mobile"
+		class="com.capgemini.springcore.beans.MobileBean" autowire="byName">
+		<property name="brandName" value="Realme" />
+		<property name="modelName" value="X Pro" />
+		<property name="price" value="23000"/>
+		<property name="deptBean" ref="mobiledisp"/>
+	</bean>
+	
+	<bean id="mobiledisp" class="com.capgemini.springcore.beans.MobileDisplayBean">
+	<property name="displaySize" value="5.5"/>
+	<property name="resolution" value="1024"/>
+	</bean> -->
+	 
+	 <!-- by type -->
+	<!--  <bean id="mobile"
+		class="com.capgemini.springcore.beans.MobileBean" autowire="byType">
+		<property name="brandName" value="Realme" />
+		<property name="modelName" value="X Pro" />
+		<property name="price" value="23000"/>
+	</bean>
+	
+	 
+	<bean id="disp" class="com.capgemini.springcore.beans.MobileDisplayBean">
+	<property name="displaySize" value="5.5"/>
+	<property name="resolution" value="1024"/>
+	</bean> -->	
+	
+	<!-- with ref -->
+	 <bean id="mobile"
+		class="com.capgemini.springcore.beans.MobileBean">
+		<property name="brandName" value="Realme" />
+		<property name="modelName" value="X Pro" />
+		<property name="price" value="23000"/>
+		<property name="mobiledisp" ref="disp"/>
+	</bean>
+	
+	 
+	<bean id="disp" class="com.capgemini.springcore.beans.MobileDisplayBean">
+	<property name="displaySize" value="5.5"/>
+	<property name="resolution" value="1024"/>
+	</bean>
+	
+</beans>
